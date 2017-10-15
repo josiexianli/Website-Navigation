@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">WebView</string>
+    <string name="action_settings">Settings</string>
+    <string name="choose_topic">Choose Topic</string>
+    <string name="show_website">Show Website</string>
+    <string name="amazon">Amazon</string>
+    <string name="google">Google</string>
+    <string name="cal_sports">Cal Sports</string>
+    <string-array name="url_array">
+        <item >https://www.google.com</item>
+        <item >http://www.amazon.com</item>
+        <item>http://www.calbears.com</item>
+    </string-array>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingBottom="@dimen/top_10"
+    android:paddingEnd="@dimen/top_10"
+    android:paddingLeft="@dimen/top_10"
+    android:paddingRight="@dimen/top_10"
+    android:paddingStart="@dimen/top_10"
+    android:paddingTop="@dimen/top_10"
+    tools:context="com.xli.webview.WebViewActivityFragment"
+    tools:showIn="@layout/activity_web_view">
+
+    <WebView
+        android:id="@+id/web_webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:padding="@dimen/top_10">
+
+        <TextView
+            android:id="@+id/web_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/choose_topic"
+            android:textSize="@dimen/size_16" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/web_scrollView"
+                android:layout_width="@dimen/fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                android: background = "@drawable/rectanglegradient">
+
+                <RadioGroup
+                    android:id="@+id/web_radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/web_radio1"
+                        android:layout_width="@dimen/fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/top_20"
+                        android:text="@string/google"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/web_radio0"
+                        android:layout_width="@dimen/fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/amazon"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/web_radio2"
+                        android:layout_width="@dimen/fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cal_sports"
+                        android:textSize="@dimen/size14" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/web_showButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/web_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="@string/show_website" />
+            style = "@style/ButtonBlue"
+    </RelativeLayout>
+
+</LinearLayout>
